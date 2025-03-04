@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.version = package['version']
   s.summary = package['description']
   s.license = package['license']
-  s.homepage = 'https://github.com/michaelwolz/camera-preview-lite.git'
+  s.homepage = 'https://github.com/selected-pixel-jameson/camera-preview.git'
   s.author = package['author']
-  s.source = { :git => 'https://github.com/michaelwolz/camera-preview-lite.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/selected-pixel-jameson/camera-preview.git#selectedpixel', :tag => s.version.to_s }
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
   s.ios.deployment_target = '14.0'
   s.dependency 'Capacitor'
