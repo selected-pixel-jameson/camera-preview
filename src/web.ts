@@ -1,12 +1,12 @@
 import { WebPlugin } from '@capacitor/core';
 
 import type {
+  CameraOpacityOptions,
+  CameraPreviewFlashMode,
   CameraPreviewOptions,
   CameraPreviewPictureOptions,
   CameraPreviewPlugin,
-  CameraPreviewFlashMode,
   CameraSampleOptions,
-  CameraOpacityOptions,
 } from './definitions';
 
 export class CameraPreviewWeb extends WebPlugin implements CameraPreviewPlugin {
@@ -17,10 +17,7 @@ export class CameraPreviewWeb extends WebPlugin implements CameraPreviewPlugin {
   private isBackCamera: boolean;
 
   constructor() {
-    super({
-      name: 'CameraPreview',
-      platforms: ['web'],
-    });
+    super();
   }
 
   async start(options: CameraPreviewOptions): Promise<{}> {
